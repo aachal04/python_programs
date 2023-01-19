@@ -1,3 +1,4 @@
+n=int(input("Enter The number:"))
 def number_to_string(n):
     ones = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
     tens = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
@@ -11,4 +12,4 @@ def number_to_string(n):
         return number_to_string(n // 1000) + " thousand " + ('' if n % 1000 == 0 else ' ' + number_to_string(n % 1000))
     else:
         return 'number out of range'
-print(number_to_string(1095))
+print(number_to_string(n))
