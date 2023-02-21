@@ -1,7 +1,0 @@
-all: main
-
-main: main.py compare.py
-	python main.py
-
-clean:
-	rm -f main
