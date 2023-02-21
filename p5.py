@@ -6,6 +6,6 @@ for i in range(n):
 print("list of elements",list1)
 search=int(input("Enter the search element:"))
 if search in list1:
-  print(list1.find(search))
+  print(list1.index(search))
 else:
     print("-1")
